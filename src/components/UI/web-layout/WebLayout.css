@@ -1,0 +1,61 @@
+/* main section --- websites */
+.website-details {
+  padding-top: 1rem;
+}
+
+.website-details__basic {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2rem auto 1rem;
+  grid-template-rows: auto auto;
+  margin-bottom: 0.5rem;
+  grid-row-gap: 3px;
+}
+
+.website__logo {
+  width: 1.3rem;
+  height: 1.3rem;
+  grid-row: 1/3;
+  align-self: center;
+  border-radius: 50%;
+}
+
+.website__name {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.website__link--home {
+  grid-column: 2/3;
+  text-decoration: none;
+  color: rgb(70, 70, 70);
+  font-size: 0.65rem;
+}
+
+.website-details__basic > span {
+  grid-area: 1/3/3/4;
+  align-self: center;
+  color: rgb(70, 70, 70);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.website__link--page {
+  display: block;
+  text-decoration: none;
+  color: rgb(0, 140, 255);
+  font-size: 1.15rem;
+  padding-bottom: 0.4rem;
+}
+
+.website__text-content {
+  font-size: 0.85rem;
+  color: rgb(70, 70, 70);
+  margin-bottom: 0.6rem;
+}
+
+.separator {
+  width: 100%;
+  height: 5px;
+  /* background-color: rgb(232, 232, 232); */
+}

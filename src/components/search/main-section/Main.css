@@ -1,0 +1,30 @@
+/* main section */
+main.search-main {
+  margin: 0.6rem 1rem;
+  font-size: 0.9rem;
+  overflow-wrap: break-word;
+  padding-bottom: 3.8rem;
+}
+
+.results {
+  color: rgb(110, 110, 110);
+  margin-bottom: 0.5rem;
+  font-size: small;
+}
+
+/* !Media queries */
+/* overriding styles */
+@media (min-width: 28rem) {
+  main.search-main {
+    margin: 0.6rem 4vw;
+    padding-bottom: 2.4rem;
+  }
+}
+
+/* new styles for desktop */
+@media (min-width: 60rem) {
+  main.search-main {
+    margin-left: 10.75rem;
+    width: 44rem;
+  }
+}

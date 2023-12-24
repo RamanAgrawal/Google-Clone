@@ -1,0 +1,84 @@
+header {
+  height: 3.8rem;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+header > .google-home {
+  margin-block: auto;
+}
+
+.header__content--settings,
+.header__content--products {
+  display: none;
+}
+
+.header__content--settings > a {
+  width: 2.5rem;
+  height: 2.5rem;
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+
+.header__content--settings > a > svg {
+  fill: grey;
+}
+
+.header__content--settings > a:hover {
+  background-color: rgb(232, 232, 232);
+}
+
+.header__content--settings > a:focus-visible {
+  outline: solid black 1px;
+  background-color: rgb(232, 232, 232);
+}
+
+header form {
+  position: absolute;
+  width: 100%;
+  top: 4rem;
+}
+
+.header__contents--right {
+  padding-right: 0;
+}
+
+/* !Overriding styles with media queries*/
+@media (min-width: 28rem) {
+  .header__contents--left > button {
+    display: flex;
+  }
+  header > .google-home {
+    padding-left: 1rem;
+  }
+}
+
+/* new styles for desktop */
+@media (min-width: 60rem) {
+  header {
+    margin-block: 1.2rem;
+    width: 100%;
+  }
+
+  .header__contents--left {
+    display: none;
+  }
+
+  .header__content--settings,
+  .header__content--products {
+    display: initial;
+  }
+
+  header form {
+    position: initial;
+    width: 44rem;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+  }
+
+  .header__contents--right {
+    margin-inline: auto 1.5rem;
+  }
+}

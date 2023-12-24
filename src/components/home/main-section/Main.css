@@ -1,0 +1,60 @@
+/*! main section */
+.google-image {
+  margin-block: 1.2rem 1.2rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Form Buttons */
+.search-buttons {
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.show-btn {
+  display: none;
+}
+
+.hide-btn {
+  display: none;
+}
+
+.btn {
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  background-color: #f8f9fa;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.google-search {
+  margin-right: 0.8rem;
+}
+
+.feeling-lucky {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn:focus-visible {
+  outline: blue solid 1px;
+}
+
+.btn:hover {
+  box-shadow: 0 0 2px rgb(128, 128, 128);
+}
+
+/* !Media Queries */
+/*For bigger Screens */
+@media (min-width: 28rem) {
+  .google-image {
+    margin-block: -0.5rem 1.2rem;
+  }
+
+  .show-btn {
+    display: flex;
+  }
+}

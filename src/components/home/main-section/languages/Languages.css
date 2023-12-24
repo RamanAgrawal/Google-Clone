@@ -1,0 +1,39 @@
+/* Languages Scetion */
+.languages {
+  font-size: 0.8rem;
+  max-width: 38rem;
+  margin: 5rem auto 0 auto;
+  display: grid;
+  place-items: center;
+  grid-row-gap: 0.5rem;
+  padding: 1rem;
+}
+
+.languages > span {
+  text-align: center;
+}
+
+.languages-offerred {
+  color: rgb(60, 60, 60);
+  width: 100%;
+}
+
+.languages a {
+  margin-inline: 0.3rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.languages a:hover {
+  text-decoration: underline;
+}
+
+/* !Media Queries */
+/*For bigger Screens */
+@media (min-width: 42.5rem) {
+  .languages {
+    margin-top: 2rem;
+    grid-template-columns: auto auto;
+    place-items: start;
+  }
+}
